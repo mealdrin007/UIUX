@@ -1,0 +1,122 @@
+:root {
+    --bg-light: #f2f5f9;
+    --bg-dark: #000000;
+    --text-light: #232327;
+    --text-dark: #ffffff;
+    --primary-color: #313C54;
+    --secondary-color: #13151A;
+}
+
+.app {
+    height: 100%;
+    display: flex;
+    position: relative;
+    min-height: 0;
+}
+
+.dashboard {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.iconMenu {
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    padding: 10px;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.iconResize {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.drawerStyle {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px #384150;
+    padding-top: 16px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 3;
+    overflow-y: auto;
+    height: 100vh;
+    flex-shrink: 0;
+    top: 0;
+    position: sticky;
+}
+
+.drawerStyle.hidden {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 60px;
+}
+
+.drawerStyle.visible {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 280px;
+}
+
+.navbar {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-light);
+    padding-left: 32px;
+    padding-right: 32px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+}
+
+
+.contentPart {}
+
+.app.light {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.app.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.app.dark .drawerStyle {
+    background-color: var(--secondary-color);
+    color: var(--bg-dark);
+}
+
+.app.dark .drawerStyle {
+    box-shadow: 0px 0px 0px;
+}
+
+.app.dark .navbar {
+    background-color: var(--bg-dark);
+    color: var(--bg-dark);
+}
+
+.app.dark .navbar {
+    box-shadow: 0px 0px 0px;
+}

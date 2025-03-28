@@ -1,0 +1,58 @@
+.logo {
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    padding: 5px;
+    background-image: linear-gradient(to top right, #22BBDE, #26E3AA);
+    margin-right: 8px;
+}
+
+.logoSection {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.ItemSection {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.ItemSection.active {
+    background-color: #293245;
+}
+
+.companyName {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Open Sans', serif;
+    margin: 0px;
+}
+
+.drawerHead {
+    color: #D0D7E6;
+    font-size: 11px;
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    padding-top: 16px;
+}
+
+.drawerItem {
+    font-size: 14px;
+    font-family: 'Open Sans', serif;
+    color: #92A0BD;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.drawericon {
+    padding-right: 8px;
+    width: 20px;
+    height: 20px;
+}
